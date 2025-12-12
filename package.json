@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-graphql-server-envelop",
+  "version": "1.0.0",
+  "description": "Minimal Node.js GraphQL server using Envelop for plugin-based extensions, with GraphiQL UI and TypeScript support",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts"
+  },
+  "keywords": ["nodejs", "graphql", "typescript", "graphiql", "envelop", "plugin", "api", "server", "graphql-server", "minimal"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@envelop/core": "^5.4.0",
+    "@envelop/validation-cache": "^10.0.0",
+    "graphql": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

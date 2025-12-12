@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // Specify module code generation: CommonJS for Node.js
+    "module": "commonjs",
+
+    // Target modern JavaScript syntax: ES2020
+    "target": "es2020",
+
+    // Include Node.js type definitions (fs, http, etc.)
+    "types": ["node"],
+
+    // Generate source maps for debugging
+    "sourceMap": true,
+
+    // Output directory for compiled JavaScript
+    "outDir": "./dist",
+
+    // Enable all strict type checking options
+    "strict": true,
+
+    // Enable experimental decorators (required for TypeGraphQL)
+    "experimentalDecorators": true,
+
+    // Emit metadata for decorators (required for TypeGraphQL)
+    "emitDecoratorMetadata": true,
+
+    // Skip type checking of declaration files in node_modules
+    "skipLibCheck": true
+  }
+}
